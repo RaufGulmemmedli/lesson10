@@ -1,102 +1,156 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style-type: none;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
-.nav{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 80px;
-    background-color: rgb(255, 255, 255);
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  padding-top: 30px;
+}
+.navLeft .navRight {
+  display: flex;
+  align-items: center;
+}
+.navLeft a,
+.navRight a {
+  color: black;
+  padding-left: 18px;
+  font-size: 16-px;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+.navRight a:last-child {
+  padding-right: 18px;
+}
+.section1 {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  background-image: url(/img/architect.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section1Center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+.section1Center span:first-child {
+  width: 100px;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.703);
+  font-size: 60px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+.section1 span:last-child {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+.section2 h1 {
+  padding: 50px 0 30px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.141);
+}
+.sectionBox {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 40px;
+}
+.sectionBox img {
+  width: 300px;
+  height: 200px;
+}
+.box {
+  position: relative;
+}
+.box span {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -7px 0 0 -7px;
+}
 
+.section3 h1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.141);
+  padding: 50px 0 30px 20px;
+}
+.section3Box {
+  padding: 30px;
+}
+.box2 {
+  width: 280px;
+  height: 200px;
+}
+.box2 img {
+  width: 280px;
+  height: 200px;
+}
+.section4Box {
+  display: flex;
+  justify-content: space-around;
+}
+.box img {
+  padding-bottom: 8px;
+}
+.box2 h3 .box2 h4 {
+  padding-bottom: 20px;
+}
+.box2 div {
+  width: 280px;
+  height: 50px;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
 }
 
-.navLeft,.navRight {
-    display: flex;
-    align-items: center;
-}
-.navLeft a,.navRight a{
-    color: black;
-    padding-left: 18px;
-    font-size: 16-px;
-    font-family: 'Times New Roman', Times, serif;
-}
-.navRight a:last-child{ 
-    padding-right: 18px;
-}
-.section1{
-    width: 100%;
-    height: 600px;
-    background-image: url(/img/architect.jpg);
-}
-.section2 h1{
-    padding: 50px 0 30px 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.141);
-
-}
-.sectionBox{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding-top: 40px;
-}
-.sectionBox img{
-    width: 300px;
-    height: 200px;
-}
-.box{
-    position: relative;
-}
-.box span{
-    position: absolute;
-    width: 120px;
-    height: 40px;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: -7px 0 0 -7px;
+.section6Box {
+  margin-top: 180px;
 }
 
-.section3 h1{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.141);
-    padding: 50px 0 30px 20px;
+.section6Box h1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.141);
+  padding-left: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.095);
+}
+.input {
+  margin: 20px auto;
+  width: 99%;
+  height: 40px;
+}
 
+.input input {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
 }
-.section3Box{
-    padding: 30px;
+.input button {
+  width: 130px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
 }
-.box2{
-    width: 280px;
-    height: 200px;
-}
-.box2 img{
-    width: 280px;
-    height: 200px;
-}
-.section4Box{
-    display: flex;
-    justify-content: space-around;
-}
-.box img{
-padding-bottom: 8px;
-}
-.box2 h3,.box2 h4{
-    padding-bottom: 20px;
-}
-.box2 div{
-    width: 280px;
-    height: 50px;
-    background-color: #EFEFEF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 23px;
-}
-.section5Box h1{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.141);
-background-color: black;
+
+footer {
+  margin-top: 300px;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/maps.jpg);
 }
