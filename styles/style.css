@@ -24,6 +24,7 @@
   font-size: 16-px;
   font-family: "Times New Roman", Times, serif;
   cursor: pointer;
+  letter-spacing: 10px;
 }
 .navRight a:last-child {
   padding-right: 18px;
